@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic & Editable Resume</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Sharable Resume Builder</h1>
+    <form id="Resume-Builder">
+        <fieldset>
+            <label for="Userid">User ID</label>
+            <input id="Userid"  type="text" placeholder="Enter Your User ID" required>
+        </fieldset>
+
+        <fieldset>
+            <legend>Objective</legend>
+            <label for="Objective"></label>
+            <textarea id="Objective"  type="text" placeholder="Add your Objective" rows="5" required></textarea>
+        </fieldset>
+        
+        <fieldset>
+            <legend>Education</legend>
+            <label for="Education1"></label>
+            <textarea id="Education1"  type="text" placeholder="Enter Your Qualification" rows="1" required></textarea>
+            <label for="Education2"></label>
+            <textarea id="Education2"  type="text" placeholder="Enter Your Qualification" rows="1" required></textarea>
+            <label for="Education3"></label>
+            <textarea id="Education3"  type="text" placeholder="Enter Your Qualification" rows="1" required></textarea>
+        </fieldset>
+
+        <fieldset>
+            <legend>Experience</legend>
+            <label for="Experience"></label>
+            <textarea id="Experience"  type="text" placeholder="Enter Your Work Experience" rows="10" required></textarea>
+        </fieldset>
+
+        <fieldset>
+            <legend>Skills</legend>
+            <label for="Skills1"></label>
+            <textarea id="Skills1"  type="text" placeholder="Enter Your Skills" rows="1" required></textarea>
+            <label for="Skills2"></label>
+            <textarea id="Skills2"  type="text" placeholder="Enter Your Skills" rows="1" required></textarea>
+            <label for="Skills3"></label>
+            <textarea id="Skills3"  type="text" placeholder="Enter Your Skills" rows="1" required></textarea>
+            <label for="Skills4"></label>
+            <textarea id="Skills4"  type="text" placeholder="Enter Your Skills" rows="1" required></textarea>
+        </fieldset>
+
+        <fieldset>
+            <legend>Personal Information</legend>
+            <label for="name">Name:</label>
+            <input id="name"  type="text" placeholder="Enter Your Name" required>
+            <label for="FatherName">Father Name:</label>
+            <input id="FatherName"  type="text" placeholder="Enter Your F/Name" required>
+            <label for="Age">Age:</label>
+            <input id="Age"  type="number" placeholder="Enter Your Age" required>
+            <label for="Phone">Phone Number:</label>
+            <input id="Phone"  type="number" placeholder="Enter Your Phone Num" required>
+            <label for="Email">Email:</label>
+            <input id="Email"  type="text" placeholder="Enter Your Email" required>
+            <label for="Address">Address:</label>
+            <textarea id="Address"  type="text" placeholder="Enter Your Adress" rows="3" required></textarea>
+        </fieldset>
+
+        <fieldset>
+            <legend>Reference</legend>
+            <label for="Reference"></label>
+            <textarea id="Reference"  type="text" placeholder="Add a Reference" rows="1" required></textarea>
+        </fieldset>
+
+        <button type="submit">Generate Resume</button>
+    </form>
+
+    <br>
+
+    <div id="Resume-Display" contenteditable="true"></div>
+     <br>
+     
+     <div id="Shareable-link-container" style="display: none;">
+        <h2>Shareable Link</h2>
+        <p>here is your link for  sharing your resume</p>
+        <a href="#"  id="shareablelink" target="_blank"></a>
+        <button id="download-pdf"><b>Download As PDF</b></button>
+
+     </div>
+
+     
+     
+    <script src="script.js"></script>
+</body>
+</html>
